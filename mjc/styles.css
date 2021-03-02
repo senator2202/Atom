@@ -1,0 +1,149 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+ body {
+  background-color: #EAEDF0;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  filter: opacity(0.5);
+}
+
+.menu-container {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: white;
+}
+
+.side-menu {
+  display: flex;
+  align-items: center;
+  flex: 1;
+}
+
+.left-side-menu {
+  justify-content: flex-start;
+}
+
+.right-side-menu {
+  justify-content: flex-end;
+}
+
+.menu-container a {
+  margin-right: 10px;
+  color: black;
+}
+
+.devider {
+  margin-right: 10px;
+}
+
+.menu-icon {
+  margin-left: 5px;
+  margin-right: 10px;
+  width: 30px;
+}
+
+.menu-icon:hover {
+  cursor: pointer;
+}
+
+.search-container {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  flex: 3;
+  max-width: 600px;
+}
+
+.common-item {
+    background-color: #FFFFFF;
+    border: 1px solid #D6D9DC;
+    border-radius: 3px;
+    padding: 7px;
+    font-size: 14px;
+    margin: 10px 0px 10px 0px;
+}
+
+.search-input {
+  flex: 2;
+}
+
+.select-input {
+  padding: 6px;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+}
+
+.login-content, .register-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  border: 1px solid rgba(0, 0, 0, .2);
+  padding: 20px;
+  background-color: white;
+  width: 350px;
+  height: 300px;
+  position: relative;
+}
+
+.login-logo {
+  height: 150px;
+  width: 150px;
+  position: relative;
+  top: -19%;
+  border-radius: 50%;
+  filter: invert();
+  background-color: #696969;
+}
+
+.login-input {
+  width: 80%;
+}
+
+.login-content button {
+  font-size: 16px;
+  font-weight: bold;
+  color: #FFFFFF;
+  background-color: #40E667;
+  border: none;
+  border-radius: 3px;
+  padding: 10px 40px;
+  cursor: pointer;
+  margin-bottom: 45px;
+  width: 80%;
+  margin-top: 10px;
+}
+
+.login-content  button:hover {
+  background-color: #76AEED;
+}
+
+.register-header {
+  display: flex;
+  justify-content: center;
+}
+
+.register-content textarea {
+  resize: none;
+  position: relative;
+  top: 0px;
+}
