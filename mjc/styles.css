@@ -9,7 +9,6 @@ html {
 }
 
  body {
-  background-color: #EAEDF0;
   display: flex;
   flex-direction: column;
   height: 100%;
@@ -91,11 +90,10 @@ html {
   flex-direction: column;
   height: 100%;
   min-height: 500px;
+  background-color: #EAEDF0;
 }
 
 .login-content, .register-content {
-  padding: 0;
-  margin: 0;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -169,7 +167,7 @@ html {
   flex-wrap: wrap;
 }
 
-.register-row label {
+.register-row label, .add-content label {
   display: block;
   margin-left: 10px;
   font-size: 12px;
@@ -179,7 +177,7 @@ html {
 
 .register-input {
   width: 300px;
-  margin: 10px;
+  margin: 5px 10px 15px 10px;
 }
 
 .register-button-row {
@@ -188,11 +186,56 @@ html {
 }
 
 .register-submit-button {
-  margin: 20px 10px 0px 15px;
+  margin: 20px 10px 0px 10px;
 }
 
 .cancel-button {
   margin: 20px 10px 0px 15px;
   border: 1px solid grey;
   filter: opacity(0.5);
+}
+
+.add-header {
+  display: flex;
+  align-items: center;
+  background-color: grey;
+  width: 100%;
+  height: 50px;
+}
+
+.add-header label{
+  margin-left: 10%;
+  font-size: 22px;
+  color: #DFD9D9;
+}
+
+.add-content {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  background-color: white;
+  padding-top: 20px;
+  flex-wrap: wrap;
+}
+
+.add-content textarea {
+  resize: none;
+  text-align: left;
+  height: 108px;
+  margin-bottom: 8px;
+}
+
+.add-content input[type="date"] {
+  text-align: left;
+}
+
+.add-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.add-button-row {
+  display: flex;
+  justify-content: center;
 }

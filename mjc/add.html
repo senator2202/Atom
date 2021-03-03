@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <meta charset='UTF-8'/>
+    <title>Add Coupon</title>
+    <link rel='stylesheet' href='styles.css'/>
+  </head>
+  <body>
+    <div class='menu-container'>
+      <div class="side-menu left-side-menu">
+        <img class="menu-icon" src="images/menu.svg" alt="side">
+        <img class="menu-icon" src="images/polymer.svg" alt="logo">
+      </div>
+      <div class="search-container">
+        <input class="common-item search-input" type="text" name="search" placeholder="Search by item name">
+        <select class="common-item select-input" name='categories'>
+          <option value="all">All categories</option>
+        </select>
+      </div>
+      <div class="side-menu right-side-menu">
+        <img class="menu-icon" src="images/favorite.svg" alt="favourite">
+        <img class="menu-icon" src="images/shopping_cart.svg" alt="cart">
+        <a href="login.html">Login</a>
+        <label class="devider"> | </label>
+        <a href="login.html">SignUp</a>
+      </div>
+    </div>
+
+    <div class="add-header">
+      <label>Add New Coupon</label>
+    </div>
+
+    <div class="add-content">
+      <div class="add-column">
+        <div>
+          <label for="company">Company</label>
+          <input class="common-item register-input" name="company" type="text">
+        </div>
+        <div>
+          <label for="categories">Category</label>
+          <select class="common-item register-input" name='categories'>
+            <option value="all">Category Name</option>
+          </select>
+        </div>
+        <div>
+          <label for="date">Valid to</label>
+          <input class="common-item register-input" type="date" name="date" value="2021-01-01">
+        </div>
+        <div>
+          <label for="price">Price</label>
+          <input class="common-item register-input" name="price" type="text">
+        </div>
+        <div>
+          <label for="images">Images</label>
+          <input class="common-item register-input" type="file" name="images">
+        </div>
+      </div>
+
+      <div class="add-column">
+        <div>
+          <label for="item">Item Name</label>
+          <input class="common-item register-input" name="item" type="text">
+        </div>
+        <div>
+          <label for="description">Short description</label>
+          <textarea class="common-item register-input" name="description"></textarea>
+        </div>
+        <div>
+          <label for="description-long">Long description</label>
+          <textarea class="common-item register-input" name="description-long"></textarea>
+        </div>
+        <div class="add-button-row">
+          <button class="button cancel-button" type="reset">Cancel</button>
+          <button class="button submit-button register-submit-button" type="submit">Sign Up</button>
+        </div>
+      </div>
+
+    </div>
+
+  </body>
+</html>
