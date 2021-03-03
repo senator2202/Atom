@@ -239,3 +239,72 @@ html {
   display: flex;
   justify-content: center;
 }
+
+.main-header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #DCDCDC;
+  padding: 15px 100px 5px 100px;
+  flex-wrap: wrap;
+}
+
+.category {
+  display: flex;
+  flex-direction: column;
+}
+
+.category img {
+  height: 80px;
+  margin-bottom: 5px;
+}
+
+.category label {
+  display: block;
+  margin-left: 10px;
+}
+
+.main-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-top: 10px;
+  background-color: #ECECEC;
+}
+
+.coupon {
+  display: flex;
+  flex-direction: column;
+  margin: 5px;
+  background-color: white;
+}
+
+.coupon img {
+  width: 200px;
+  height: 200px;
+}
+
+.coupon-row {
+  display: flex;
+}
+
+.coupon-row label{
+  flex: 2;
+}
+
+.coupon-row img {
+  width: 20px;
+  height: 20px;
+}
+
+.coupon-row:nth-child(3) {/*coupon description*/
+  font-size: 11px;
+}
+
+.coupon-row:nth-child(3) label:first-child{/*first label in coupon description*/
+  font-weight: 700;
+}
+
+.coupon-row:nth-child(3) label:nth-child(2){/*second label in coupon description*/
+  font-style: italic;
+}
