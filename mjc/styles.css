@@ -15,7 +15,7 @@ html {
   height: 100%;
 }
 
-::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+::-webkit-input-placeholder{ /* Chrome/Opera/Safari */
   filter: opacity(0.5);
 }
 
@@ -90,6 +90,7 @@ html {
   align-items: center;
   flex-direction: column;
   height: 100%;
+  min-height: 500px;
 }
 
 .login-content, .register-content {
@@ -126,30 +127,72 @@ html {
   width: 100%
 }
 
-.login-content button {
+.button {
   font-size: 16px;
   font-weight: bold;
-  color: #FFFFFF;
-  background-color: #40E667;
   border: none;
   border-radius: 3px;
   padding: 10px 40px;
   cursor: pointer;
+}
+
+.submit-button {
+  color: #FFFFFF;
+  background-color: #40E667;
+}
+
+.login-submit-button {
   width: 100%;
   margin-bottom: 20px;
 }
 
-.login-content  button:hover {
-  background-color: #76AEED;
-}
-
 .register-header {
   display: flex;
-  justify-content: center;
+  align-items: center;
+  background-color: grey;
+  width: 106.5%;
+  position: relative;
+  top: -20px;
+  height: 50px;
 }
 
-.register-content textarea {
-  resize: none;
-  position: relative;
-  top: 0px;
+.register-header label{
+  color: white;
+  padding-left: 25px;
+  font-family: Calibri, Arial, sans-serif;
+  font-size: 18px;
+}
+
+.register-row {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.register-row label {
+  display: block;
+  margin-left: 10px;
+  font-size: 12px;
+  filter: opacity(0.5);
+  font-weight: 650;
+}
+
+.register-input {
+  width: 300px;
+  margin: 10px;
+}
+
+.register-button-row {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.register-submit-button {
+  margin: 20px 10px 0px 15px;
+}
+
+.cancel-button {
+  margin: 20px 10px 0px 15px;
+  border: 1px solid grey;
+  filter: opacity(0.5);
 }

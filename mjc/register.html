@@ -26,12 +26,47 @@
       </div>
     </div>
     <div class="content">
-      <textarea readonly>Register</textarea>
-
-      <input type="text" placeholder="Login name">
-      <input type="text" placeholder="Login name">
-      <input type="text" placeholder="Login name">
-      <input type="text" placeholder="Login name">
+      <div class="register-content">
+        <div class="register-header">
+          <label>Register</label>
+        </div>
+        <form action="" method="get">
+          <div class="register-row">
+            <div>
+              <label for="login">Login</label>
+              <input class="common-item register-input" name="login" type="text">
+            </div>
+            <div>
+              <label for="name">First Name</label>
+              <input class="common-item register-input" name="name" type="text">
+            </div>
+          </div>
+          <div class="register-row">
+            <div>
+              <label for="password">Password</label>
+              <input class="common-item register-input" name="password" type="password">
+            </div>
+            <div>
+              <label for="repeat">Repeat Password</label>
+              <input class="common-item register-input" name="repeat" type="password">
+            </div>
+          </div>
+          <div class="register-row">
+            <div>
+              <label for="email">Email</label>
+              <input class="common-item register-input" name="email" type="email">
+            </div>
+            <div>
+              <label for="address">Address</label>
+              <input class="common-item register-input" name="address" type="text">
+            </div>
+          </div>
+          <div class="register-button-row">
+            <button class="button cancel-button" type="reset">Cancel</button>
+            <button class="button submit-button register-submit-button" type="submit">Sign Up</button>
+          </div>
+        </form>
+      </div>
     </div>
   </body>
 </html>
