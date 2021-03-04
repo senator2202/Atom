@@ -167,7 +167,7 @@ html {
   flex-wrap: wrap;
 }
 
-.register-row label, .add-content label {
+.register-row label, .centered-column label {
   display: block;
   margin-left: 10px;
   font-size: 12px;
@@ -180,7 +180,7 @@ html {
   margin: 5px 10px 15px 10px;
 }
 
-.register-button-row {
+.right-align-row {
   display: flex;
   justify-content: flex-end;
 }
@@ -195,7 +195,7 @@ html {
   filter: opacity(0.5);
 }
 
-.add-header {
+.content-header {
   display: flex;
   align-items: center;
   background-color: grey;
@@ -203,13 +203,13 @@ html {
   height: 50px;
 }
 
-.add-header label{
+.content-header label{
   margin-left: 10%;
   font-size: 22px;
   color: #DFD9D9;
 }
 
-.add-content {
+.top-float-content {
   display: flex;
   justify-content: center;
   align-items: flex-start;
@@ -218,26 +218,27 @@ html {
   flex-wrap: wrap;
 }
 
-.add-content textarea {
+.top-float-content textarea {
   resize: none;
   text-align: left;
   height: 108px;
   margin-bottom: 8px;
 }
 
-.add-content input[type="date"] {
+.top-float-content input[type="date"] {
   text-align: left;
 }
 
-.add-column {
+.centered-column {
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
-.add-button-row {
+.centered-row {
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 .main-header {
@@ -377,4 +378,64 @@ html {
 
 .details-column a {
   color: 	#00BFFF;
+}
+
+.checkout-content {
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+
+.checkout-content .centered-row,
+.checkout-content .total-row{
+  margin-top: 10px;
+}
+
+.checkout-content .centered-row img {
+  height: 75px;
+  width: 75px;
+}
+
+.checkout-content .centered-row div {
+  flex: 3;
+  margin: 15px 100px 15px 15px;
+}
+
+.checkout-content label {
+  min-width: 55px;
+  filter: none;
+}
+
+.checkout-content .centered-column label:first-child,
+.checkout-content .centered-row label,
+.checkout-content .total-row {
+  font-size: 16px;
+  font-weight: 900;
+  margin-bottom: 10px;
+}
+
+.checkout-content .centered-column label:nth-child(2) {
+  max-width: 300px;
+  font-weight: 400;
+  font-size: 13px;
+}
+
+.checkout-content hr {
+  color: black;
+  min-width: 500px;
+}
+
+.total-row {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  min-width: 500px;
+}
+
+.total-row label {
+  font-size: 20px;
+}
+
+.checkout-content .register-button-row {
+  padding-left: 160px;
 }
