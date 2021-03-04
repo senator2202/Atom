@@ -286,6 +286,7 @@ html {
 
 .coupon-row {
   display: flex;
+  padding: 4px 8px 4px 8px;
 }
 
 .coupon-row label{
@@ -296,15 +297,22 @@ html {
   width: 20px;
   height: 20px;
 }
+.coupon-row label:first-child {
+  font-weight: 700;
+}
 
 .coupon-row:nth-child(3) {/*coupon description*/
   font-size: 11px;
 }
 
 .coupon-row:nth-child(3) label:first-child{/*first label in coupon description*/
-  font-weight: 700;
+  flex: 4;
 }
 
-.coupon-row:nth-child(3) label:nth-child(2){/*second label in coupon description*/
-  font-style: italic;
+.coupon-row button {
+  padding: 0px 10px 0px 10px;
+  border: 1px solid;
+  border-radius: 3px;
+  background-color: white;
+  cursor: pointer;
 }
